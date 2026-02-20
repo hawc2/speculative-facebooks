@@ -1,0 +1,11 @@
+{
+  "name": "speculative-facebooks",
+  "version": "1.0.0",
+  "description": "Jest unit tests for the Wax search UI helpers",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

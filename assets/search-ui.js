@@ -34,6 +34,11 @@ function displayResult(item, fields, url) {
   return `<div class="result"><a href="${url}${link}">${thumb}<p><span class="title">${item.label}</span><br><span class="meta">${meta.join(' | ')}</span></p></a></div>`;
 }
 
+// Export functions for Node.js/testing environments while preserving browser behavior
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { excerptedString, getThumbnail, displayResult };
+}
+
 function startSearchUI(fields, indexFile, url) {
   $.getJSON(indexFile, function(store) {
     var index  = new elasticlunr.Index;
