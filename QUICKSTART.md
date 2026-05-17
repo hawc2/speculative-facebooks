@@ -45,7 +45,7 @@ Your Speculative Facebooks site now has **6 new experimental interfaces** plus a
 
 ### Option 1: Local Development
 ```bash
-cd ~/Code/Hawc2/speculative-facebooks
+cd ~/Code/Github/speculative-facebooks
 
 # If bundler version issue, update it:
 bundle update --bundler
